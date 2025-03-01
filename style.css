@@ -1,0 +1,35 @@
+:root{
+    /*Colores*/
+    --background-blue: #1F2937;
+    --off-white: #F9FAF8;
+    --grey: #E5E7EB;
+    --soft-blue: #3882F6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+}
+.hero-main-section{
+    display: flex;
+
+    background-color: var(--background-blue);
+}
+
+.hero-main-section .nav{
+    flex: 1;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    min-width: 320;
+    background-color: var(--background-blue);
+}
+body {
+   
+}
