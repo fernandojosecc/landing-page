@@ -56,3 +56,74 @@ nav ul li a{
     text-decoration: none;
     font-size: 16px;
 }
+
+/*Hero section*/
+
+.header{
+    display: flex;
+    justify-content: space-between; /* Places text on left, video on right */
+    align-items: center; /* Centers vertically */
+    background-color: var(--background-blue);
+    color: var(--off-white);
+    padding: 50px 20px;
+}
+.header--title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-blue);
+    color: var(--off-white);
+    padding: 50px 20px;
+    justify-content: flex-start;
+}
+
+.header--title-container h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header--title-container p{
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--grey);
+}
+
+.header--button{
+    background-color: var(--soft-blue);
+    color: var(--off-white);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header--button a{
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+.header--image-container {
+    width: 50%; /* Adjust width for the image/video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--backgroundIMG {
+    width: 100%;
+    height: 250px; /* Adjust this to match the placeholder box, use 250 for image and 300 for video*/
+    background-color: var(--grey);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.header--backgroundIMG img { /*if you use image img, if its video use video*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fully fills the box */
+    border-radius: 5px;
+}
