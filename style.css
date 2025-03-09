@@ -13,7 +13,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400; /* Regular weight */
     font-style: normal;
-    outline: 2px solid red;
+    
 }
 body {
     background-color: white;
@@ -104,6 +104,7 @@ nav ul li a{
     text-decoration: none;
 }
 
+/*Image Container*/
 .header--image-container {
     width: 50%; /* Adjust width for the image/video */
     display: flex;
@@ -126,4 +127,40 @@ nav ul li a{
     height: 100%;
     object-fit: cover; /* Ensures the video fully fills the box */
     border-radius: 5px;
+}
+
+/*Main Content*/
+.main-title-container{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main-pictures-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pictures-img--card {
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--soft-blue); /* Blue border */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pictures-img--card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures image fills the box completely */
+}
+
+.pictures-container--card p {
+    margin-top: 10px; /* Adjust spacing as needed */
+    text-align: center; /* Optional: centers text */
 }
