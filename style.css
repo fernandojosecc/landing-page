@@ -164,3 +164,37 @@ nav ul li a{
     margin-top: 10px; /* Adjust spacing as needed */
     text-align: center; /* Optional: centers text */
 }
+
+/*Quote Section*/
+.main-quote-container{
+    background-color: var(--grey);
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+/*Call to Action*/
+.main-signup-container{
+    background-color: var(--soft-blue);
+    color: var(--off-white);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main-signup--button {
+    background-color: white;
+    color: var(--soft-blue);
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-blue);
+    color: var(--off-white);
+}
