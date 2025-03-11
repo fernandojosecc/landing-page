@@ -13,6 +13,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400; /* Regular weight */
     font-style: normal;
+    /* outline: 2px solid red; */
     
 }
 body {
@@ -20,10 +21,11 @@ body {
     color: var(--background-blue); /*this is the color of the text*/
 }
 
+
 /*Navigation Bar*/
 nav{
     display: flex;
-    padding: 20px 50px;
+    padding: 20px 20%;
     background-color: var(--background-blue);
     justify-content: space-between;
 }
@@ -65,7 +67,7 @@ nav ul li a{
     align-items: center; /* Centers vertically */
     background-color: var(--background-blue);
     color: var(--off-white);
-    padding: 50px 20px;
+    padding: 50px 20%;
 }
 .header--title-container{
     display: flex;
@@ -73,7 +75,7 @@ nav ul li a{
     align-items: flex-start;
     background-color: var(--background-blue);
     color: var(--off-white);
-    padding: 50px 20px;
+    padding: 50px 0px;
     justify-content: flex-start;
 }
 
@@ -92,7 +94,7 @@ nav ul li a{
     background-color: var(--soft-blue);
     color: var(--off-white);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-top: 20px;
     font-size: 18px;
     border-radius: 5px;
@@ -166,29 +168,84 @@ nav ul li a{
 }
 
 /*Quote Section*/
-.main-quote-container{
+.main-quote-container {
     background-color: var(--grey);
-    padding: 50px;
+    padding: 60px 30%;  /* Spacing inside */
     text-align: center;
-    font-style: italic;
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.main-quote-container p {
+    font-family: "Roboto", sans-serif;
+    font-style: italic !important; /* Forces italic, on this case is not really that important to put !important*/
+    font-weight: 300; /* Adjusts to a lighter style */
+}
+
+/* Make sure the author text is bold but not italic */
+.main-quote-container h4 {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
 }
 
 /*Call to Action*/
-.main-signup-container{
+.main-signup-container {
     background-color: var(--soft-blue);
     color: var(--off-white);
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
+    padding: 40px 80px;  /* More horizontal padding */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin: 50px 20%; /* Center it with auto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Call-to-action text */
+.main-signup-text {
+    flex: 1; /* Allows it to take up most of the space */
+    text-align: left; /* Aligns text to the left */
+}
+
+.main-signup-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main-signup-text p {
+    font-size: 16px;
+    opacity: 0.9; /* Slightly faded text */
+}
+
+/* Sign-up button */
 .main-signup--button {
-    background-color: white;
-    color: var(--soft-blue);
-    padding: 10px 20px;
+    background-color: var(--soft-blue);
+    color: var(--off-white);
+    padding: 10px 24px;
     font-size: 18px;
-    border: none;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.main-signup--button:hover {
+    background-color: var(--off-white);
+    color: white;
+}
+
+/* Ensures button text is properly styled */
+.main-signup--button a {
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+.main-signup--button:hover a {
+    color: var(--soft-blue);
 }
 
 /* Footer */
